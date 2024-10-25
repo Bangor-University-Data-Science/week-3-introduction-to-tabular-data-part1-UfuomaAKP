@@ -10,12 +10,12 @@ def create_feature_type_dict(df):
     """
     feature_types = {
         'numerical': {
-            'continuous': [],  # Fill with continuous numerical features
-            'discrete': []  # Fill with discrete numerical features
+            'continuous': ['PassengerId', 'Age', 'Fare'],  # Fill with continuous numerical features
+            'discrete': ['PassengerId', 'Survived', 'Sibsp', 'Parch']  # Fill with discrete numerical features
         },
         'categorical': {
-            'nominal': [],  # Fill with nominal categorical features
-            'ordinal': []  # Fill with ordinal categorical features
+            'nominal': ['Name', 'Sex']  # Fill with nominal categorical features
+            'ordinal': ['Pclass']  # Fill with ordinal categorical features
         }
     }
     return feature_types
