@@ -1,4 +1,6 @@
-def get_numerical_df(df, numerical_features):
+import pandas as pd
+
+def get_numerical_df(df: pd.DataFrame, numerical_features: list) -> pd.DataFrame:
     """
     Creates a DataFrame containing only numerical features.
     
@@ -10,4 +12,6 @@ def get_numerical_df(df, numerical_features):
         pd.DataFrame: DataFrame containing only numerical features.
     """
     pass  # Implement the logic here
-        return df[numerical_features]
+df = pd.DataFrame
+numerical_cols = df.select_dtypes (include= ['int', 'float']).columns.to_list()
+print (numerical_cols)

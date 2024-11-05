@@ -1,4 +1,7 @@
-def display_unique_values(df, categorical_features):
+import pandas as pd
+
+def display_unique_values(df: pd.Dataframe, categorical_features: list) -> dict:
+    categorical_cols = df.select_dtypes (include=['object', 'category', 'boolean']).columns.to_list()
     """
     Displays unique values for each categorical feature in the DataFrame.
     
@@ -10,6 +13,6 @@ def display_unique_values(df, categorical_features):
         dict: A dictionary where keys are feature names and values are the unique values.
     """
     pass  # Implement the logic here
-    for feature  in categorical_features:
-        unique_values = df[feature].unique()
-        print (f"unique values for'{feature}' : {unique_values}")
+df = pd.DataFrame(columns=['Name', 'Sex', 'Ticket', 'Cabin', 'Embarked'])
+df[['Name'], ['Sex'], ['Ticket'], ['Cabin'], ['Embarked']].unique()
+print(df)   
