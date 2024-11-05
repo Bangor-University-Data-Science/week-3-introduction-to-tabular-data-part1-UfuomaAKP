@@ -14,5 +14,4 @@ def display_unique_values(df: pd.Dataframe, categorical_features: list) -> dict:
     """
     pass  # Implement the logic here
 df = pd.DataFrame(columns=['Name', 'Sex', 'Ticket', 'Cabin', 'Embarked'])
-df[['Name'], ['Sex'], ['Ticket'], ['Cabin'], ['Embarked']].unique()
-print(df)   
+df[['Name'], ['Sex'], ['Ticket'], ['Cabin'], ['Embarked']].unique() 

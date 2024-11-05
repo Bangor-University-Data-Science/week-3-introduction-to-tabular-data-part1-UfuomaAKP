@@ -12,5 +12,4 @@ def create_summary_table(df: pd.DataFrame) -> pd.DataFrame:
     """
     pass  # Implement the logic here
 df = pd.DataFrame
-df.info()
-print(create_summary_table)    
+df.info()   

@@ -14,4 +14,3 @@ def get_numerical_df(df: pd.DataFrame, numerical_features: list) -> pd.DataFrame
     pass  # Implement the logic here
 df = pd.DataFrame
 numerical_cols = df.select_dtypes (include= ['int', 'float']).columns.to_list()
-print (numerical_cols)
